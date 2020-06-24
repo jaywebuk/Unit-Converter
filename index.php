@@ -32,8 +32,7 @@
                 </section>
                 <section
                     class="social d-flex flex-column flex-sm-row justify-content-between justify-content-sm-between pt-2 pb-2 pt-sm-3">
-                    <a class="" href="/" title="My Website" data-link="jnrwebdev"
-                        target="_blank">
+                    <a class="" href="/" title="My Website" data-link="jnrwebdev" target="_blank">
                         <img class="mb-2 mt-sm-0" src="img/site_logo.png" alt="My Website">
                     </a>
                     <a class="mb-2" href="https://twitter.com/jayuk79" target="_blank" title="Twitter" rel="noopener">
