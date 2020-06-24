@@ -17,9 +17,9 @@ if (window.innerWidth >= 576) {
 converterButton.forEach((el) => {
   el.addEventListener("click", function () {
     button.forEach((thisButton) => {
-      thisButton.style = "color: #ccc; background: rgb(69, 27, 83);";
+      thisButton.style = "color: #ccc; background: rgb(0,81,187);";
     });
-    this.style = "color: white; background: rgb(103, 45, 122)";
+    this.style = "color: white; background: rgb(0, 119, 255)";
     let id = this.dataset["converter"];
     converter.forEach((thisConverter) => {
       thisConverter.style["display"] = "none";

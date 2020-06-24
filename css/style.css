@@ -4,8 +4,7 @@ body {
 
 header.main-header {
   height: 120px;
-  background: #332244;
-  background: linear-gradient(180deg, #332244 0%, #552266 100%);
+  background: #00001E;
   color: #fff;
 }
 
@@ -49,8 +48,12 @@ header.main-header section.site-title a:hover {
 
 footer {
   text-align: center;
-  background: #552266;
-  background: linear-gradient(180deg, #552266 0%, #332244 100%);
+  background: #00001E;
+  /* background: linear-gradient(
+    180deg,
+    rgba(85, 34, 102, 1) 0%,
+    rgba(51, 34, 68, 1) 100%
+  ); */
   color: white;
 }
 
@@ -65,7 +68,7 @@ footer a {
   margin-right: 3px;
   margin-left: 3px;
   width: 145px;
-  background: #451b53;
+  background: #0051bb;
   color: #ccc;
   border: none;
   outline: none !important;
@@ -80,7 +83,7 @@ footer a {
 
 .inactive {
   color: #ccc;
-  background: #451b53;
+  background: #0051bb;
 }
 
 option:focus {
@@ -88,17 +91,17 @@ option:focus {
 }
 
 .form-control:focus {
-  border-color: #ac3dd1;
-  box-shadow: 0 0 0 0.2rem #c85cec;
+  border-color: #0051bb;
+  box-shadow: 0 0 0 0.2rem #0077ff;
 }
 
 .card {
-  background-color: #e7e0ee;
+  background-color: #e0e2ee;
 }
 
 #lengthButton {
   color: white;
-  background: #672d7a;
+  background: #0077ff;
 }
 
 section.form-container {
@@ -115,7 +118,7 @@ select option:focus {
 }
 
 .nav-dropdown select {
-  background: #672d7a;
+  background: #0077ff;
   color: #fff;
 }
 

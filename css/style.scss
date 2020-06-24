@@ -4,12 +4,12 @@ body {
 
 header.main-header {
   height: 120px;
-  background: rgb(51, 34, 68);
-  background: linear-gradient(
-    180deg,
-    rgba(51, 34, 68, 1) 0%,
-    rgba(85, 34, 102, 1) 100%
-  );
+  background: #00001E;
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(51, 34, 68, 1) 0%,
+  //   rgba(85, 34, 102, 1) 100%
+  // );
   color: #fff;
 
   .social {
@@ -54,12 +54,12 @@ header.main-header {
 
 footer {
   text-align: center;
-  background: rgb(85, 34, 102);
-  background: linear-gradient(
+  background: #00001E;
+  /* background: linear-gradient(
     180deg,
     rgba(85, 34, 102, 1) 0%,
     rgba(51, 34, 68, 1) 100%
-  );
+  ); */
   color: white;
 
   a {
@@ -74,7 +74,8 @@ footer {
   margin-right: 3px;
   margin-left: 3px;
   width: 145px;
-  background: rgb(69, 27, 83);
+  background: #0051bb;
+  // background: #0077ff;
 
   color: #ccc;
   border: none;
@@ -90,7 +91,7 @@ footer {
 
 .inactive {
   color: #ccc;
-  background: rgb(69, 27, 83);
+  background: rgb(0,81,187);
 }
 
 option:focus {
@@ -98,17 +99,17 @@ option:focus {
 }
 
 .form-control:focus {
-  border-color: rgb(172, 61, 209);
-  box-shadow: 0 0 0 0.2rem rgb(200, 92, 236);
+  border-color: rgb(0,81,187);
+  box-shadow: 0 0 0 0.2rem rgb(0, 119, 255);
 }
 
 .card {
-  background-color: #e7e0ee;
+  background-color: #e0e2ee;
 }
 
 #lengthButton {
   color: white;
-  background: rgb(103, 45, 122);
+  background: rgb(0, 119, 255);
 }
 
 section.form-container {
@@ -124,7 +125,7 @@ select option:focus {
   font-size: 1.4rem;
 
   select {
-    background: rgb(103, 45, 122);
+    background: rgb(0, 119, 255);
     color: #fff;
 
     option {
