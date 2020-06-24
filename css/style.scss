@@ -61,6 +61,11 @@ footer {
     rgba(51, 34, 68, 1) 100%
   );
   color: white;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
 }
 
 .button {

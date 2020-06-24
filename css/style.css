@@ -54,6 +54,11 @@ footer {
   color: white;
 }
 
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .button {
   position: relative;
   font-size: 1.4rem;
