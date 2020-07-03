@@ -6,7 +6,7 @@ let converterSelectDropdown = document.getElementById(
   "converter-select-dropdown"
 );
 
-document.getElementById("lengthConverter").style["display"] = "block";
+document.getElementById("lengthConverter").style.display = "block";
 
 if (window.innerWidth >= 576) {
   unitSelectSize.forEach((el) => {
@@ -20,13 +20,13 @@ converterButton.forEach((el) => {
       thisButton.style = "color: #ccc; background: rgb(0,81,187);";
     });
     this.style = "color: white; background: rgb(0, 119, 255)";
-    let id = this.dataset["converter"];
+    let id = this.dataset.converter;
     converter.forEach((thisConverter) => {
-      thisConverter.style["display"] = "none";
+      thisConverter.style.display = "none";
     });
     document.querySelector(`#${id}UnitInput`).setAttribute("value", "");
     document.querySelector(`#${id}UnitOutput`).setAttribute("value", "");
-    document.querySelector(`#${id}Converter`).style["display"] = "block";
+    document.querySelector(`#${id}Converter`).style.display = "block";
   });
 });
 
@@ -34,14 +34,13 @@ converterSelectDropdown.addEventListener("change", () => {
   let id =
     converterSelectDropdown.options[
       converterSelectDropdown.options.selectedIndex
-    ].dataset["converter"];
-  console.log(`#${id}UnitInput`);
+    ].dataset.converter;
   converter.forEach((thisConverter) => {
-    thisConverter.style["display"] = "none";
+    thisConverter.style.display = "none";
   });
   document.querySelector(`#${id}UnitInput`).setAttribute("value", "");
   document.querySelector(`#${id}UnitOutput`).setAttribute("value", "");
-  document.querySelector(`#${id}Converter`).style["display"] = "block";
+  document.querySelector(`#${id}Converter`).style.display = "block";
 });
 
 window.onresize = () => {
@@ -286,29 +285,30 @@ var weight = {
 
 var temp = {
   celsius: {
-    celsius: (temp) => parseFloat(temp),
-    fahrenheit: (temp) => parseFloat(temp / 5) * 9 + 32,
-    kelvin: (temp) => parseFloat(temp) + 273.15,
+    celsius: temp => parseFloat(temp),
+    fahrenheit: temp => parseFloat(temp / 5) * 9 + 32,
+    kelvin: temp => parseFloat(temp) + 273.15,
   },
   fahrenheit: {
-    celsius: (temp) => ((parseFloat(temp) - 32) * 5) / 9,
-    fahrenheit: (temp) => parseFloat(temp),
-    kelvin: (temp) => (parseFloat(temp) - 32) * (5 / 9) + 273.15,
+    celsius: temp => ((parseFloat(temp) - 32) * 5) / 9,
+    fahrenheit: temp => parseFloat(temp),
+    kelvin: temp => (parseFloat(temp) - 32) * (5 / 9) + 273.15,
   },
   kelvin: {
-    celsius: (temp) => parseFloat(temp) - 273.15,
-    fahrenheit: (temp) => (parseFloat(temp) - 273.15) * (9 / 5) + 32,
-    kelvin: (temp) => parseFloat(temp),
+    celsius: temp => parseFloat(temp) - 273.15,
+    fahrenheit: temp => (parseFloat(temp) - 273.15) * (9 / 5) + 32,
+    kelvin: temp => parseFloat(temp),
   },
 };
 
 const convert = id => {
   const input = document.querySelector(`#${id}`).value;
-  const unit = document.querySelector(`#${id}`).dataset["unit"];
+  const unit = document.querySelector(`#${id}`).dataset.unit;
+  let unitOutput = document.querySelector(`#${unit}UnitOutput`);
   let output = null;
 
   if (input === "") {
-    document.querySelector(`#${unit}UnitOutput`).value = "";
+    unitOutput.value = "";
     return;
   }
 
@@ -317,15 +317,15 @@ const convert = id => {
 
   if (input) {
     if (isNaN(input) && input !== "-" && input !== ".") {
-      document.querySelector(`#${unit}UnitOutput`).value = "Invalid Input.";
+      unitOutput.value = "Invalid Input.";
       return;
     }
     if (input === "-") {
-      document.querySelector(`#${unit}UnitOutput`).value = "-";
+      unitOutput.value = "-";
       return;
     }
     if (input === ".") {
-      document.querySelector(`#${unit}UnitOutput`).value = ".";
+      unitOutput.value = ".";
       return;
     }
 
@@ -335,8 +335,8 @@ const convert = id => {
       output = input * window[unit][convertFrom][convertTo];
     }
 
-    document.querySelector(`#${unit}UnitOutput`).value = parseFloat(
+    unitOutput.value = parseFloat(
       output.toFixed(4)
     );
   }
-}
+};
