@@ -1,0 +1,22 @@
+{
+  "name": "unit-converter",
+  "version": "1.0.0",
+  "description": "Allows for the conversion of some popular units of length, area, weight and temperature.",
+  "main": "./Public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayuk79/unit-converter.git"
+  },
+  "author": "Jason Robinson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayuk79/unit-converter/issues"
+  },
+  "homepage": "https://github.com/jayuk79/unit-converter#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}

@@ -1,4 +1,6 @@
 .vscode/
-.jshintrc
 *.min.*
+*.css*
 !bootstrap.min.css
+UnitCalculator.js
+node_modules

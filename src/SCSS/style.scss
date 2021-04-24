@@ -5,21 +5,27 @@ body {
 header.main-header {
   height: 120px;
   background: #00001E;
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(51, 34, 68, 1) 0%,
+  //   rgba(85, 34, 102, 1) 100%
+  // );
   color: #fff;
-}
 
-header.main-header .social {
-  width: 160px;
-}
+  .social {
+    width: 160px;
+  }
 
-header.main-header section.site-title a {
-  color: white;
-}
+  section.site-title {
+    a {
+      color: white;
 
-header.main-header section.site-title a:hover {
-  text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
-
 .tagline {
   position: relative;
   left: 15px;
@@ -55,11 +61,11 @@ footer {
     rgba(51, 34, 68, 1) 100%
   ); */
   color: white;
-}
 
-footer a {
-  color: #fff;
-  text-decoration: underline;
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
 }
 
 .button {
@@ -69,21 +75,23 @@ footer a {
   margin-left: 3px;
   width: 145px;
   background: #0051bb;
+  // background: #0077ff;
+
   color: #ccc;
   border: none;
   outline: none !important;
   padding: 3px;
   margin-bottom: 8px;
-  box-shadow: 1px 2px 3px black;
-}
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
 
-.button:active {
-  font-size: 1.3rem;
+  &:active {
+    font-size: 1.3rem;
+  }
 }
 
 .inactive {
   color: #ccc;
-  background: #0051bb;
+  background: rgb(0,81,187);
 }
 
 option:focus {
@@ -91,8 +99,8 @@ option:focus {
 }
 
 .form-control:focus {
-  border-color: #0051bb;
-  box-shadow: 0 0 0 0.2rem #0077ff;
+  border-color: rgb(0,81,187);
+  box-shadow: 0 0 0 0.2rem rgb(0, 119, 255);
 }
 
 .card {
@@ -101,7 +109,7 @@ option:focus {
 
 #lengthButton {
   color: white;
-  background: #0077ff;
+  background: rgb(0, 119, 255);
 }
 
 section.form-container {
@@ -115,16 +123,16 @@ select option:focus {
 .nav-dropdown {
   display: none;
   font-size: 1.4rem;
-}
 
-.nav-dropdown select {
-  background: #0077ff;
-  color: #fff;
-}
+  select {
+    background: rgb(0, 119, 255);
+    color: #fff;
 
-.nav-dropdown select option {
-  border: none !important;
-  outline: none !important;
+    option {
+      border: none !important;
+      outline: none !important;
+    }
+  }
 }
 
 select#converter-select-dropdown {
@@ -133,6 +141,7 @@ select#converter-select-dropdown {
 
 @media only screen and (max-width: 768px) {
   button.converter-button {
+    // padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
     width: auto;
@@ -140,20 +149,25 @@ select#converter-select-dropdown {
 }
 
 @media only screen and (max-width: 585px) {
-  header.main-header .tagline {
-    display: none;
+  header.main-header {
+    .tagline {
+      display: none;
+    }
   }
 }
 
 @media only screen and (max-width: 576px) {
-  header.main-header h1 {
-    font-size: 3rem;
-  }
-  header.main-header .social {
-    width: 30px;
-  }
-  header.main-header .social img {
-    width: 30px;
+  header.main-header {
+    h1 {
+      font-size: 3rem;
+    }
+    .social {
+      width: 30px;
+
+      img {
+        width: 30px;
+      }
+    }
   }
   .unitSelect {
     size: 8;

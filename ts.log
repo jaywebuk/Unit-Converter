@@ -1,0 +1,54 @@
+src/TS/UnitCalculator.ts(9,1): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(20,18): error TS2339: Property 'style' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(22,5): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+src/TS/UnitCalculator.ts(23,14): error TS2683: 'this' implicitly has type 'any' because it does not have a type annotation.
+src/TS/UnitCalculator.ts(25,21): error TS2339: Property 'style' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(27,5): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(28,5): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(29,5): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(29,47): error TS2339: Property 'style' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(33,1): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(35,5): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(35,29): error TS2339: Property 'options' does not exist on type 'HTMLElement'.
+src/TS/UnitCalculator.ts(36,7): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(36,31): error TS2339: Property 'options' does not exist on type 'HTMLElement'.
+src/TS/UnitCalculator.ts(39,19): error TS2339: Property 'style' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(41,3): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(42,3): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(43,3): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(43,45): error TS2339: Property 'style' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(48,5): error TS2581: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery`.
+src/TS/UnitCalculator.ts(50,5): error TS2581: Cannot find name '$'. Do you need to install type definitions for jQuery? Try `npm i --save-dev @types/jquery`.
+src/TS/UnitCalculator.ts(54,5): error TS2403: Subsequent variable declarations must have the same type.  Variable 'length' must be of type 'number', but here has type '{ feet: { feet: number; metre: number; inch: number; cm: number; mm: number; yard: number; kilometre: number; mile: number; }; metre: { feet: number; metre: number; inch: number; cm: number; mm: number; yard: number; kilometre: number; mile: number; }; ... 5 more ...; mm: { ...; }; }'.
+src/TS/UnitCalculator.ts(288,14): error TS7006: Parameter 'temp' implicitly has an 'any' type.
+src/TS/UnitCalculator.ts(289,17): error TS7006: Parameter 'temp' implicitly has an 'any' type.
+src/TS/UnitCalculator.ts(289,36): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+src/TS/UnitCalculator.ts(290,13): error TS7006: Parameter 'temp' implicitly has an 'any' type.
+src/TS/UnitCalculator.ts(293,14): error TS7006: Parameter 'temp' implicitly has an 'any' type.
+src/TS/UnitCalculator.ts(294,17): error TS7006: Parameter 'temp' implicitly has an 'any' type.
+src/TS/UnitCalculator.ts(295,13): error TS7006: Parameter 'temp' implicitly has an 'any' type.
+src/TS/UnitCalculator.ts(298,14): error TS7006: Parameter 'temp' implicitly has an 'any' type.
+src/TS/UnitCalculator.ts(299,17): error TS7006: Parameter 'temp' implicitly has an 'any' type.
+src/TS/UnitCalculator.ts(300,13): error TS7006: Parameter 'temp' implicitly has an 'any' type.
+src/TS/UnitCalculator.ts(304,17): error TS7006: Parameter 'id' implicitly has an 'any' type.
+src/TS/UnitCalculator.ts(305,17): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(305,50): error TS2339: Property 'value' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(306,16): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(306,49): error TS2339: Property 'dataset' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(311,5): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(311,16): error TS2339: Property 'value' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(315,23): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(315,69): error TS2339: Property 'value' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(316,21): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(316,65): error TS2339: Property 'value' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(320,7): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(320,18): error TS2339: Property 'value' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(324,7): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(324,18): error TS2339: Property 'value' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(328,7): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(328,18): error TS2339: Property 'value' does not exist on type 'Element'.
+src/TS/UnitCalculator.ts(333,16): error TS2349: This expression is not callable.
+  Type 'Window' has no call signatures.
+src/TS/UnitCalculator.ts(335,24): error TS2363: The right-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/TS/UnitCalculator.ts(338,5): error TS2531: Object is possibly 'null'.
+src/TS/UnitCalculator.ts(338,16): error TS2339: Property 'value' does not exist on type 'Element'.
