@@ -14,7 +14,7 @@ if (window.innerWidth >= 576) {
   });
 }
 
-converterButton.forEach((el) => {
+converterButton.forEach((el: HTMLInputElement) => {
   el.addEventListener("click", function () {
     button.forEach((thisButton) => {
       thisButton.style = "color: #ccc; background: rgb(0,81,187);";
@@ -51,7 +51,13 @@ window.onresize = () => {
   }
 };
 
-var length = {
+interface conversion {
+  [name: string]: {
+    [name: string]: number;
+  };
+}
+
+const length: conversion = {
   feet: {
     feet: 1,
     metre: 0.3048,
@@ -134,7 +140,7 @@ var length = {
   },
 };
 
-var area = {
+const area: conversion = {
   sqFeet: {
     sqFeet: 1,
     sqMetre: 0.09290304,
@@ -217,7 +223,7 @@ var area = {
   },
 };
 
-var weight = {
+const weight: conversion = {
   gram: {
     gram: 1,
     kilogram: 0.001,
@@ -283,28 +289,30 @@ var weight = {
   },
 };
 
-var temp = {
+const temp: conversion = {
   celsius: {
-    celsius: temp => parseFloat(temp),
-    fahrenheit: temp => parseFloat(temp / 5) * 9 + 32,
-    kelvin: temp => parseFloat(temp) + 273.15,
+    celsius: (temp) => parseFloat(temp),
+    fahrenheit: (temp) => parseFloat(temp / 5) * 9 + 32,
+    kelvin: (temp) => parseFloat(temp) + 273.15,
   },
   fahrenheit: {
-    celsius: temp => ((parseFloat(temp) - 32) * 5) / 9,
-    fahrenheit: temp => parseFloat(temp),
-    kelvin: temp => (parseFloat(temp) - 32) * (5 / 9) + 273.15,
+    celsius: (temp) => ((parseFloat(temp) - 32) * 5) / 9,
+    fahrenheit: (temp) => parseFloat(temp),
+    kelvin: (temp) => (parseFloat(temp) - 32) * (5 / 9) + 273.15,
   },
   kelvin: {
-    celsius: temp => parseFloat(temp) - 273.15,
-    fahrenheit: temp => (parseFloat(temp) - 273.15) * (9 / 5) + 32,
-    kelvin: temp => parseFloat(temp),
+    celsius: (temp) => parseFloat(temp) - 273.15,
+    fahrenheit: (temp) => (parseFloat(temp) - 273.15) * (9 / 5) + 32,
+    kelvin: (temp) => parseFloat(temp),
   },
 };
 
-const convert = id => {
-  const input = document.querySelector(`#${id}`).value;
-  const unit = document.querySelector(`#${id}`).dataset.unit;
-  let unitOutput = document.querySelector(`#${unit}UnitOutput`);
+const convert = (id) => {
+  const input: number = document.querySelector(`#${id}`).value;
+  const unit: string = document.querySelector(`#${id}`).dataset.unit;
+  let unitOutput: HTMLElement<Element> = document.querySelector(
+    `#${unit}UnitOutput`
+  );
   let output = null;
 
   if (input === "") {
@@ -312,8 +320,12 @@ const convert = id => {
     return;
   }
 
-  const convertFrom = document.querySelector(`#${unit}ConvertFrom`).value;
-  const convertTo = document.querySelector(`#${unit}ConvertTo`).value;
+  const convertFrom: string = (<HTMLInputElement>(
+    document.querySelector(`#${unit}ConvertFrom`)
+  )).value;
+  const convertTo: string = (<HTMLInputElement>(
+    document.querySelector(`#${unit}ConvertTo`)
+  )).value;
 
   if (input) {
     if (isNaN(input) && input !== "-" && input !== ".") {
@@ -335,8 +347,6 @@ const convert = id => {
       output = input * window[unit][convertFrom][convertTo];
     }
 
-    unitOutput.value = parseFloat(
-      output.toFixed(4)
-    );
+    unitOutput.value = parseFloat(output.toFixed(4));
   }
 };
